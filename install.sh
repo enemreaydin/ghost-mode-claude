@@ -20,7 +20,7 @@ clear
 print_header
 echo -e "${CYAN}(Q1/4)"
 echo -e "What is the primary language you use (e.g. English, Arabic, etc.)?${RESET}"
-read -p "Language: " LANGUAGE
+read -p "Language: " LANGUAGE </dev/tty
 
 clear
 
@@ -28,7 +28,7 @@ print_header
 echo -e "${CYAN}(Q2/4)"
 echo -e "Do you want Claude act like a non-native speaker?"
 echo -e "${YELLOW}(Claude will use phrases that are used by non-native speakers. Turn it on to hide better from AI detectors.)${RESET}"
-read -p "'y' for yes, 'n' for no (y/n): " NONNATIVE
+read -p "'y' for yes, 'n' for no (y/n): " NONNATIVE </dev/tty
 
 clear
 
@@ -36,7 +36,7 @@ print_header
 echo -e "${CYAN}(Q3/4)"
 echo -e "Do you want Claude to make minor grammar errors on purpose?"
 echo -e "${YELLOW}(Turn it on to hide better from AI detectors.)${RESET}"
-read -p "'y' for yes, 'n' for no (y/n): " GRAMMARERROR
+read -p "'y' for yes, 'n' for no (y/n): " GRAMMARERROR </dev/tty
 
 clear
 
@@ -44,7 +44,7 @@ print_header
 echo -e "${CYAN}(Q4/4)"
 echo -e "Do you want Claude to make the structure human-like?"
 echo -e "${YELLOW}(Claude will mimic human-like imperfections, such as overexplaining some topics, etc. Turn it on to hide better from AI detectors.)${RESET}"
-read -p "'y' for yes, 'n' for no (y/n): " STRUCTUREFLAW
+read -p "'y' for yes, 'n' for no (y/n): " STRUCTUREFLAW </dev/tty
 
 
 if [ "$NONNATIVE" = "y" ]; then
@@ -74,7 +74,7 @@ echo "  Non-native Speaker Mimic  : $NONNATIVE"
 echo "  Intentional Grammar Errors  : $GRAMMARERROR"
 echo "  Structural Imperfections    : $STRUCTUREFLAW"
 echo ""
-read -p "Create skill with these settings? (y/n): " CONFIRM
+read -p "Create skill with these settings? (y/n): " CONFIRM </dev/tty
 
 if [ "$CONFIRM" != "y" ]; then
   echo -e "${RED}Cancelled.${RESET}"
