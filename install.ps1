@@ -6,7 +6,7 @@ $RESET = "`e[0m"
 
 function Print-Header {
     Write-Host "Welcome to claude /ghost skill installer!"
-    Write-Host "Star my repo :) -> repolink"
+    Write-Host "Star my repo :) -> https://github.com/enemreaydin/ghost-mode-claude.git"
     Write-Host "${GREEN}"
     Write-Host "╔══════════════════════════╗"
     Write-Host "║   Ghost Skill Installer  ║"

@@ -7,7 +7,7 @@ RESET='\033[0m'
 
 print_header() {
   echo "Welcome to claude /ghost skill installer!"
-  echo "Star my repo :) -> repolink"
+  echo "Star my repo :) -> https://github.com/enemreaydin/ghost-mode-claude.git"
   echo -e "${GREEN}"
   echo "╔══════════════════════════╗"
   echo "║   Ghost Skill Installer  ║"

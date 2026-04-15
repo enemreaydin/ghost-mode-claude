@@ -26,8 +26,8 @@ When `/ghost` is active, Claude:
 ### Mac / Linux
 
 ```bash
-git clone https://github.com/yourusername/ghost-skill.git
-cd ghost-skill
+git clone https://github.com/enemreaydin/ghost-mode-claude.git
+cd ghost-mode-claude
 chmod +x install.sh
 ./install.sh
 ```
@@ -35,21 +35,21 @@ chmod +x install.sh
 Or with one line:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yourusername/ghost-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/enemreaydin/ghost-mode-claude/main/install.sh | bash
 ```
 
 ### Windows (PowerShell)
 
 ```powershell
-git clone https://github.com/yourusername/ghost-skill.git
-cd ghost-skill
+git clone https://github.com/enemreaydin/ghost-mode-claude.git
+cd ghost-mode-claude
 .\install.ps1
 ```
 
 Or with one line:
 
 ```powershell
-irm https://raw.githubusercontent.com/yourusername/ghost-skill/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/enemreaydin/ghost-mode-claude/main/install.ps1 | iex
 ```
 
 ---
@@ -105,7 +105,7 @@ Just run the installer again. It will overwrite the previous skill with your new
 ## 📁 Repo Structure
 
 ```
-ghost-skill/
+ghost-mode-claude/
 ├── install.sh          # Mac/Linux installer
 ├── install.ps1         # Windows installer
 └── README.md
